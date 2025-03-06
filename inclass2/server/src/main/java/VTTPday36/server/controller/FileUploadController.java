@@ -56,6 +56,7 @@ public class FileUploadController {
         Optional<Post> optionalP = this.fileUploadService.getPostById(postId);
         Post p = optionalP.get();
 
+        //encoding byte array into base 64 string
         String encodingString = Base64.getEncoder().encodeToString(p.getImage());
 
         JsonObject obj = Json.createObjectBuilder()
