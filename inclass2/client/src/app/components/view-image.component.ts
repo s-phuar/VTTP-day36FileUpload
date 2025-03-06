@@ -19,6 +19,7 @@ export class ViewImageComponent implements OnInit, OnDestroy{
   private activatedRoute = inject(ActivatedRoute)
   private fileUploadSvc = inject(FileUpload)
 
+  //ASYNC AND AWAIT FROM PROMISE
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(
         async(params) => {
