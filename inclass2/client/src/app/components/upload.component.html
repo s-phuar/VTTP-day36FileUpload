@@ -1,0 +1,30 @@
+
+<form [formGroup]="form" (submit)="upload()" >
+
+    <table>
+        <tr>
+            <!-- file type opens folder to choose image only-->
+            <td><input type="file" accept="imageasdasdas/whocares" #fileUpload></td>
+        </tr>
+        <tr>
+            <!-- comment -->
+            <td><input matInput type="text" size="30" formControlName="comments" placeholder="comments"></td>
+        </tr>
+
+        <!-- send png for upload -->
+        <button type="submit">Upload</button>
+
+    </table>
+
+
+
+
+
+
+</form>
+
+
+
+
+
+

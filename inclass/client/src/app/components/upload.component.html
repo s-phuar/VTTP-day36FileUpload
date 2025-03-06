@@ -1,0 +1,30 @@
+
+<form [formGroup]="form">
+
+    <table>
+        <tr>
+            <!-- file type opens folder to choose png only-->
+            <td><input type="file" (change)="onFileChange($event)" accept="imageasdasdas/whocares"></td>
+        </tr>
+        <tr>
+            <!-- comment -->
+            <td><input matInput type="text" size="30" formControlName="comments" placeholder="comments"></td>
+        </tr>
+
+        <!-- send png for upload -->
+        <button mat-raised-button-color="primary" (click)="upload()">Upload</button>
+
+    </table>
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
