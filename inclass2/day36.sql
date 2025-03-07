@@ -7,6 +7,7 @@ CREATE TABLE `posts` (
   `picture` MEDIUMBLOB NULL,
   PRIMARY KEY (`post_id`));
   
+drop table posts;
   
 select * from posts ;
   
