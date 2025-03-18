@@ -10,7 +10,8 @@ CREATE TABLE `posts` (
 drop table posts;
   
 select * from posts ;
-  
+
+select * from cities;
     
   
   
